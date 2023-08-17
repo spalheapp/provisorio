@@ -1,0 +1,75 @@
+#descapt{
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.divisaoApts{
+    display: flex;
+}
+@media(max-width:1000px){
+    .divisaoApts{
+        flex-direction: column;
+    }
+}
+@media(max-width:700px){
+    #descapt{
+        flex-direction: column;
+    }
+}
+
+.apts{
+    border: 2px solid var(--cor-azul-claro);
+    padding: 10px 30px;
+
+    border-radius: 10px;
+    margin: 10px;
+}
+.descTxt{
+    background: var(--cor-azul-claro);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.pessoas div{
+    display: flex;
+    align-items: center;
+}
+
+.pessoas div > p{
+    margin: 0;
+    margin-left: 5px;
+}
+
+.apts h3{
+    margin-top: 15px;
+    color: var(--cor-azul-claro);
+}
+
+.apts h6{
+    margin-top: 30px;
+}
+
+ul p{
+    margin: 0;
+}
+
+.aptButton{
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.aptButton a{
+    text-decoration: none;
+    background: var(--cor-azul);
+    color:#fff;
+    padding: 9px ;
+    border-radius: 10px;
+
+    text-align: center;
+
+}

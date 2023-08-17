@@ -1,0 +1,22 @@
+main{
+    background-image: url('../../src/img/passeios/main.jpg');
+    background-position: center 20%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+}
+
+
+main h1{
+    font-weight: bold;
+    font-size: 48px;
+}
+
+main h3{
+    font-weight: 300;
+}

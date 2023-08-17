@@ -1,0 +1,52 @@
+#temporada{
+    background: var(--cor-azul);
+}
+
+#temporadaBrand{
+    max-width: 100%;
+}
+
+#temporadaBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#temporadaImgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 20px;
+
+
+}
+
+#temporadaImgs a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 30%;
+}
+
+#temporadaImgs img{
+    width: 100%;
+}
+
+@media(max-width: 500px){
+    #temporadaImgs {
+        flex-direction: column;
+
+        align-items: center;
+    }
+    #temporadaImgs a{
+        max-width: 90%;
+    }
+
+    #temporadaImgs img{
+        margin: 10px;
+    }
+} 

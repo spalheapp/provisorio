@@ -1,0 +1,38 @@
+#servicos{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+@media(max-width: 700px){
+    #servicos{
+        flex-direction: column;
+    }
+}
+.servicosBoxs{
+    display: flex;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 160px;
+    max-width: 500px;
+
+}
+
+@media(max-width:500px){
+    .servicosBoxs{
+        max-width: 350px;
+    }
+}
+
+.servicosBoxs p{
+    margin: 0;
+}
+
+.icon i{
+    color: var(--cor-azul-claro);
+    background: #f4f4f4;
+    margin-right: 35px;
+    padding: 8px;
+    border-radius: 5px;
+}
