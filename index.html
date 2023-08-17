@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-brasil">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reserva.css">
+    <link rel="stylesheet" href="styles/mostruario.css">
+    <link rel="stylesheet" href="styles/temporada.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/loading.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/bootstrap-reboot.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    <title>Tamandaré Praia Hotel</title>
+</head>
+<body>
+
+    <div id="loading">
+        <div></div>
+        <img class="pulse" src="./src/img/footer/loogoapp.fw.png" alt="">
+        <img src="src/img/marca.png" alt="" style="margin: 15px;">
+    </div>
+
+
+    <header>
+        <nav class=" navbar navbar-light bg-light">
+            <div class="container">
+
+
+                <div>
+                    <a href="/" class="nav-brand">
+                        <img src="src/img/footer/loogoapp.fw.png" alt="" width="100">
+                       </a>
+                </div>
+
+
+                <div>
+                    <a class="navLink" href="/">Início</a>
+                    <a class="navLink" href="pages/passeio.html">Passeios</a>
+                    <a class="navLink" href="pages/alugue.html">Hotel</a>
+
+                
+                    <button onclick="menu()"><i class="fa-solid fa-bars fa-2x"></i></button>
+                </div>
+
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main id="carousel"></main>
+
+    <!-- Reserve -->
+    <section id="reserva" >
+        <div id="reservaBox" class="container">
+            <h1>Faça aqui a sua reserva!</h1>
+
+            <form>
+                <select name="" id="lugares" class="form-control">]
+                    <option value="Praia dos Carneiros">Tamandaré Praia Hotel</option>
+                    <option value="Tamandaré">Tamandaré</option>
+                </select>
+            </form>
+
+            <div id="entradaSaida">
+                <div>
+                    <p>Entrada:</p>
+                    <input type="date" id="dataEntrada">
+                </div>
+                <div>
+                    <p>Saida</p>
+                    <input type="date" id="dataSaida">
+                </div>
+            </div>
+
+            <div id="qtdPessoas">
+                <div>
+                    <p>Adultos</p>
+                    <input type="text" id="adultos">
+                </div>
+                <div>
+                    <p>Crianças</p>
+                    <input type="text" id="criancas">
+                </div>
+            </div>
+
+            <button id="reservaButton" onclick="reserva()">Faça sua reserva</button>
+        </div>
+    </section>
+
+    <!-- Temporada -->
+    <section id="temporada">
+        <div class="container" id="temporadaBox">
+            <img id="temporadaBrand" src="https://alugueflattemporada.com.br/images/Datas-especiais-.png" alt="">
+
+            <div id="temporadaImgs" class="container">
+                <a href="">
+                    <img src="./src/img/comemoração/01.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/comemoração/02.png" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/comemoração/03.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- mostruario -->
+    <section id="mostruario">
+        <div >
+            <img id="mostruarioBrand" src="https://www.alugueflattemporada.com.br/images/at.png" alt="">
+        </div>
+
+        <div class="container tituloDireito" >
+            <h1>MURO ALTO | PE</h1>
+            <P>Maior piscina natural da América Latina</P>
+        </div>
+
+        <div class="direito" >
+
+
+                <div class="direitoBox" class="container">
+                    <a href="">
+                        <img src="./src/img/temporada/temporada.jpeg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./src/img/temporada/temporada.jpeg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./src/img/temporada/temporada.jpeg" alt="">
+                    </a>
+                </div>
+
+                <div class="direitoBox">
+                    <a href="">
+                        <img src="./src/img/temporada/temporada.jpeg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./src/img/temporada/temporada.jpeg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./src/img/temporada/temporada.jpeg" alt="">
+                    </a>
+                </div>
+
+        </div>
+        <hr/>
+        <div class="container tituloEsquerdo" >
+            <h1>Maragori | PE</h1>
+            <P>Maior piscina natural da América Latina</P>
+        </div>
+
+        <div class="esquerdo" class="container">
+            <div class="direitoBox">
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+            </div>
+            <div class="direitoBox">
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+            </div>
+        <hr/>
+
+
+
+        <div class="container tituloDireito" >
+            <h1>Praia dos Carneiros | PE</h1>
+            <P>Maior piscina natural da América Latina</P>
+        </div>
+            <div class="direitoBox" class="container">
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+            </div>
+
+            <div class="direitoBox">
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+                <a href="">
+                    <img src="./src/img/temporada/temporada.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Contatos -->
+    <section id="contato">
+        <div class="container">
+            <div id="contatoBox">
+
+
+
+                <div id="contatoDireito">
+                    <div class="brandContato">
+                        <img src="src/img/contatos/Frame 1.png" alt="">
+                    </div>
+                    <div id="contatoForm" class="container">
+                        <input type="text" placeholder="nome" id="promocaoNome">
+                        <input type="text" placeholder="telefone" id="promocaoTelefone">
+                        <input type="email" placeholder="email" id="promocaoEmail">
+                        <div>
+                            <p>Seus dados apenas serão utilizados para fins de comunicação e marketing. Você pode cancelar o recebimento de comunicações e mensagens quando quiser. Para mais informações confira nosso Aviso de Privacidade.</p>
+                        </div>
+                        <div id="contatoButton">
+                            <button id="promocaoButton" onclick="promocao()">Enviar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div id="contatoEsquerdo">
+                    <div class="brandContato">
+                        <img src="src/img/contatos/Frame 2.png" alt="">
+                    </div>
+                    <div id="redes">
+                        <a href="">
+                            <img src="src/img/contatos/Frame 3.png" alt="">
+                        </a>
+
+                        <a href="">
+                            <img src="src/img/contatos/Frame 4.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="src/img/contatos/Frame 5.png" alt="">
+                        </a>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <hr style="border: 1px solid #000;">
+    
+
+
+    <!-- Footer -->
+
+
+    <footer>
+        <div id="footerBox" class="container">
+            <div id="brandFooter">
+                <img src="src/img/footer/loogoapp.fw.png" alt="">
+                <h3>A reserva na palma da sua mão</h3>
+                <p>Entre em contato e garanta suas férias</p>
+            </div>
+            <div id="mobile">
+                <img src="src/img/footer/mobi.fw.png" alt="">
+            </div>
+            <div id="qr">
+                <h3>Escaneie o Qr code!</h1>
+                <h4>Reserve já</h4>
+                <img src="src/img/footer/qrplus-code-1674998023983.png" alt="">
+            </div>
+        </div>
+
+        <hr style="border: 1px solid #000;">
+
+        <div id="footer">
+            <div id="footerTxt" class="container">
+                <p>
+                    Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum
+                    ,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum
+                    ,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum
+                    ,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum
+                </p>
+                <hr style="border: 1px solid #000; width: 100%;">
+            </div>
+
+            <div id="final" class="container">
+                <div>
+                    <img src="src/img/footer/loogoapp.fw.png" alt="">
+                </div>
+
+                <div style="max-width: 700px;">
+                    <p>Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum
+                        ,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum,Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="scripts/menu.js"></script>
+<script src="scripts/whatsapp/index.js"></script>
+<script src="scripts/whatsapp/promocao.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/bb2d553a57.js" crossorigin="anonymous"></script>
+<script src="./scripts/carrousel.js"></script>
+<script src="scripts/loading.js"></script>
+
+</html>
