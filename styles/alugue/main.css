@@ -1,0 +1,32 @@
+main{
+    background-image: url('../../src/img/passeios/main.jpg');
+    background-position: center 20%;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerMain{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+#headerMain h1{
+    font-size: 56px;
+}
+
+@media(max-width:850px){
+    #headerMain h1{
+        font-size: 38px;
+    }
+}
+
+@media(max-width: 500px){
+    #headerMain h1{
+        font-size: 32px;
+    }
+}
+

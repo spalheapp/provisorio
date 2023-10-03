@@ -1,0 +1,102 @@
+#callToAction {
+  background-color: var(--cor-azul);
+
+  color: #fff;
+}
+
+#callBox {
+  display: flex;
+  align-items: center;
+}
+
+#callText {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  max-width: 700px;
+}
+#callText h1 {
+  margin-top: 20px;
+}
+#callText h2 {
+  margin-top: 20px;
+}
+#callText p {
+  margin-top: 20px;
+}
+
+#callForm {
+  background: #fff;
+  color: var(--cor-azul);
+
+  padding: 30px;
+
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  max-width: 600px;
+}
+
+
+
+#callForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media(max-width:750px){
+    #callBox{
+        flex-direction: column;
+    }
+    #callText{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    #callForm{
+      margin: 30px;
+    }
+}
+
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  border: none;
+  background: #d3d3d3;
+  border-radius: 5px;
+
+  padding: 10px;
+}
+
+.inputs select{
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border: none;
+  background: #d3d3d3;
+  border-radius: 5px;
+
+  padding: 10px;
+  color: #737373;
+}
+
+.inputs button{
+  margin-top: 30px;
+  padding: 15px 50px;
+
+  border: none;
+  border-radius: 4px;
+
+  background: var(--cor-azul);
+  color: #fff;
+}

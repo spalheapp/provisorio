@@ -1,0 +1,89 @@
+.divisoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.divisoria hr{
+    width: 90%;
+    margin: 10px;
+    color: var(--cor-azul-claro);
+    border: 2px solid var(--cor-azul-claro);
+    opacity: 100%;
+    border-radius: 50px;
+}
+
+.divisoria div{
+
+
+    min-width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.divisoria p{
+    font-size: 14px;
+    margin: 0;
+
+}
+
+@media(max-width:500px){
+    .divisoria p{
+        font-size: 12px
+    }
+    .divisoria div{
+        min-width: 210px;
+        margin: 0px;
+    }
+}
+
+/* divisoria 2 */
+
+.divisoria2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.divisoria2 hr{
+    width: 90%;
+    margin: 10px;
+    color: var(--cor-azul-claro);
+    border: 2px solid var(--cor-azul-claro);
+    opacity: 100%;
+    border-radius: 50px;
+}
+
+.divisoria2 div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.divisoria2 p{
+    font-size: 14px;
+    margin: 0;
+
+}
+
+@media(max-width:500px){
+    .divisoria2 p{
+        font-size: 12px
+    }
+    .divisoria2 div{
+        margin: 0px;
+    }
+}

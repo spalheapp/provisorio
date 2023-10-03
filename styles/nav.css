@@ -1,0 +1,36 @@
+header{
+  position: fixed;
+
+  width: 100%;
+  z-index: 1; 
+}
+nav a{
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 18px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+nav a:hover{
+  color: #1ab5c7;
+}
+
+.nav-brand img {
+  width: 75px;
+}
+
+nav button{
+  border: none;
+}
+
+@media(min-width:1000px){
+  nav button{
+    display: none;
+  }
+}
+@media(max-width:1000px){
+  .navLink{
+    display: none;
+  }
+}

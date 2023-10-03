@@ -1,0 +1,65 @@
+#contatoBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contatoDireito{
+    padding-bottom: 20px;
+}
+
+.brandContato img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+#contatoForm{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 400px;
+}
+
+#contatoForm input{
+    margin-top: 10px;
+
+    border: none;
+    background: #d3d3d3;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+#contatoButton button{
+    padding: 4px 50px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: var(--cor-azul);
+    color: #fff;
+}
+
+
+/* esquedo */
+
+#contato
+
+
+#redes{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Responsivo */
+
+@media(max-width: 820px){
+    #contatoBox{
+        flex-direction: column;
+    }
+}

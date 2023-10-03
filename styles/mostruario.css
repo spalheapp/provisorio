@@ -1,0 +1,81 @@
+#mostruario{
+    background: var(--cor-azul-claro);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mostruarioBrand{
+    max-width: 100%;
+}
+
+
+.direitoBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 20px;
+
+
+}
+
+.direitoBox a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 25%;
+}
+
+.direitoBox img{
+    width: 100%;
+}
+
+@media(max-width: 500px){
+    .direitoBox {
+        flex-direction: column;
+
+        align-items: center;
+        padding: 0px;
+    }
+    .direitoBox a{
+        max-width: 90%;
+    }
+
+    .direitoBox img{
+        margin: 10px;
+    }
+} 
+
+#mostruario hr{
+    height: 4px;
+    width: 90%;
+    color: #fff;
+
+    z-index: 1;
+}
+
+.tituloDireito {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    padding-top: 90px;
+
+}
+
+.tituloEsquerdo{
+    padding-top: 90px;
+    text-align: right;
+    margin: 10px;
+}
+
+.tituloDireito h1, .tituloEsquerdo h1{
+    font-weight: bold;
+    margin: 0px;
+}
+.tituloDireito p, .tituloEsquerdo p{
+    font-weight: 300;
+    font-size: 24px;
+}

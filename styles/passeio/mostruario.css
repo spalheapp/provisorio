@@ -1,0 +1,82 @@
+#passeio{
+    display: flex;
+    align-items: center;
+
+}
+
+.boxPasseio{
+    margin-top: 30px;
+
+    display: flex;
+}
+
+
+.box{
+    background: var(--cor-azul-claro);
+    padding: 15px;
+    margin: 15px;
+}
+.fa-whatsapp:hover{
+    color: var(--cor-azul);
+}
+
+
+.boxPasseio img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+@media(max-width:1000px){
+    .boxPasseio{
+        flex-direction: column;
+    }
+    .boxPasseio img{
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+
+.box > div{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.passeioTxt{
+    display: flex;
+    flex-direction: column;
+}
+
+.box h3{
+    color: #fff;
+}
+.passeioTxt p{
+    margin: 0;
+    color: #fff;
+}
+
+
+/* separador */
+.separador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.separador img{
+    width: 50px;
+}
+
+.separador hr{
+    width: 90%;
+    margin: 10px;
+    color: #E96509;
+    border: 2px solid #E96509;
+    opacity: 100%;
+    border-radius: 50px;
+}

@@ -1,0 +1,25 @@
+header img{
+    width: 75px;
+}
+
+body{
+    background: var(--cor-azul);
+    background-color: var(--cor-azul);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+main a{
+    
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+
+}

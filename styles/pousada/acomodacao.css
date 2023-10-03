@@ -1,0 +1,9 @@
+#acomodacoes{
+    background: var(--cor-azul);
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: centerS;
+}

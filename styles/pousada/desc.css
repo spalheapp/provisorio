@@ -1,0 +1,22 @@
+#desc{
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#desc div{
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+}
+
+@media(max-width:500px){
+    #desc div{
+        flex-direction: column;
+    }
+}
+
+#desc i{
+    color: var(--cor-azul-claro);
+}
