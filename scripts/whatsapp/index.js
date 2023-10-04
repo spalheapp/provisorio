@@ -12,7 +12,7 @@ function reserva(){
     const entrada = dataEntrada.value.split("-").reverse().join().replace(/,/g, "/")
     const saida = dataSaida.value.split("-").reverse().join().replace(/,/g, "/")
 
-    window.location.href = `https://api.whatsapp.com/send?phone=5581981914968&text=Tipo%20de%20Quarto:%20${lugar.value}%0AData%20de%20check-in:%20${entrada}%0AData%20de%20checkout:%20${saida}%0AQuantidade%20de%20adultos:%20${adulto.value}%0AQuantidade%20de%20crian%C3%A7as:%20${crianca.value}`
+    window.location.href = `https://api.whatsapp.com/send?phone=5581981914968&text=Tipo%20de%20quarto:%20${lugar.value}%0AData%20de%20check-in:%20${entrada}%0AData%20de%20checkout:%20${saida}%0AQuantidade%20de%20adultos:%20${adulto.value}%0AQuantidade%20de%20crian%C3%A7as:%20${crianca.value}`
 }
 
 
