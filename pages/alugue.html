@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-brasil">
 <head>
+        <script language="JavaScript">
+        function protegercodigo() {
+        if (event.button==2||event.button==3){
+            alert('Código protegido por: Marcos Santos');}
+        }
+        document.onmousedown=protegercodigo
+    </script>
+    <script>
+    if (document.addEventListener) {
+        document.addEventListener("keydown", bloquearSource);
+    } else { //Versões antigas do IE
+        document.attachEvent("onkeydown", bloquearSource);
+    }
+    
+    function bloquearSource(e) {
+        e = e || window.event;
+    
+        var code = e.which || e.keyCode;
+    
+        if (
+            e.ctrlKey &&
+            (code == 83 || code == 85) //83 = S, 85 = U
+        ) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            } else {
+                e.returnValue = false;
+            }
+    
+            return false;
+        }
+    }
+    </script>
     <link rel="icon" type="img/png" href="https://www.tamandarepraiahotel.com/src/img/favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
