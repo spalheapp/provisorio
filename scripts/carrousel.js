@@ -9,4 +9,4 @@ setInterval(() => {
     }
 
     carousel.style.backgroundImage = `url(../src/img/hotel${count}.jpg)`
-}, 7000)
+}, 6000)
